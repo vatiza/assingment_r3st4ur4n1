@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import MarketExperiences from "./components/MarketExperiences";
 import Navbar from "./components/navbar";
+import PopularFoods from "./components/PopularFoods";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
       <Header />
       <MarketExperiences />
+      <PopularFoods />
     </div>
   );
 };

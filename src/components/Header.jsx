@@ -1,4 +1,4 @@
-import headerImg from "../assets/svg/headerImg.svg";
+import headerImg from "../assets/img/headerImg.png";
 import littleFlower from "../assets/svg/littleFlower.svg";
 import offerImg from "../assets/svg/Offer.svg";
 const Header = () => {

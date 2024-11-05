@@ -1,18 +1,18 @@
 import { useState } from "react";
-import marketImg from "../assets/svg/marketexp.svg";
-import marketExp from "../assets/svg/MarketPlace.svg";
+import marketImg from "../assets/img/foodImg.png";
+import marketExp from "../assets/img/marketPlace.png";
 import { LuPackage, LuPhoneCall } from "react-icons/lu";
 import "./Tabs.css";
 import { FiShoppingBag } from "react-icons/fi";
 import { SlBadge } from "react-icons/sl";
-import tamatoImg from "../assets/svg/tamatoImg.svg";
+import tamatoImg from "../assets/img/tamatoSalad.png";
 const MarketExperiences = () => {
   const [activeTab, setActiveTab] = useState(0);
   const handleTabClick = (index) => {
     setActiveTab(index);
   };
   return (
-    <div className=" relative mt-7 mb-40   lg:px-40">
+    <div className=" relative mt-7 mb-10   lg:px-40">
       <div className="flex flex-col px-7  gap-12 lg:flex-row">
         <div className="relative lg:w-[500px]">
           <img src={marketImg} alt="" />
@@ -125,7 +125,7 @@ const MarketExperiences = () => {
       </div>
 
       <img
-        className="hidden lg:block absolute top-1/3 right-0 w-40"
+        className="hidden lg:block absolute top-1/3 right-0 w-32"
         src={tamatoImg}
         alt=""
       />
