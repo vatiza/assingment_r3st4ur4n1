@@ -1,0 +1,26 @@
+.tabs {
+  width: 100%;
+}
+
+.tab-list {
+  display: flex;
+  cursor: pointer;
+}
+
+.tab {
+  padding: 6px 20px;
+}
+
+.tab.active {
+  background-color: #b52b1d;
+  color: white;
+}
+
+.tab-content {
+  /* border-top: 1px solid #ddd; */
+  border-top: 2px solid #b52b1d;
+}
+
+.tab-panel {
+  display: block;
+}

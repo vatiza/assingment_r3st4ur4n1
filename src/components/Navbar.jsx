@@ -39,19 +39,21 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="sticky bg-[#BD1F17] text-white top-0 z-10 ">
+    <div className="sticky bg-[#BD1F17] text-white top-0 z-20 ">
       <div className="px-2 py-3  lg:px-40">
         <div className="flex justify-between">
           <div className="flex items-center gap-3 ">
             <img src={logo} alt="Logo" className="h-8 w-auto " />
-            <h1>Restaurant</h1>
+            <h1 className="font-poppins text-2xl font-semibold">
+              Restau<span className="font-normal">rant</span>
+            </h1>
             <div className="hidden lg:flex items-center list-none gap-5 ml-9">
               {navLink}
             </div>
           </div>
 
-          <div className="hidden lg:flex items-center ml-[350px]">
-            <button className="uppercase px-3 py-2 bg-yellow-400 text-black text-sm font-semibold">
+          <div className="hidden lg:flex items-center ml-[250px]">
+            <button className="uppercase px-6 py-2 bg-yellow-400 font-roboto text-black text-sm font-semibold">
               book a table{" "}
             </button>
           </div>
