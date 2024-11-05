@@ -2,7 +2,7 @@ import { useState } from "react";
 import marketImg from "../assets/img/foodImg.png";
 import marketExp from "../assets/img/marketPlace.png";
 import { LuPackage, LuPhoneCall } from "react-icons/lu";
-import "./Tabs.css";
+import "./style/Tabs.css";
 import { FiShoppingBag } from "react-icons/fi";
 import { SlBadge } from "react-icons/sl";
 import tamatoImg from "../assets/img/tamatoSalad.png";

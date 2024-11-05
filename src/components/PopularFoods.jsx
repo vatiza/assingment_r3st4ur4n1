@@ -1,6 +1,9 @@
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import tamatoSalad from "../assets/img/tamatoSalad.png";
+import FoodSwiper from "./swiper/FoodSwiper";
+import tamatoSalad from "../assets/img/tamatos.png";
+import { useRef } from "react";
 const PopularFoods = () => {
+  const swiperRef = useRef(null);
   return (
     <div className="bg-[#faf5f0] h-screen relative mt-7 pt-10  mb-10   lg:px-40">
       <div className="flex flex-row items-center justify-between">
@@ -14,16 +17,22 @@ const PopularFoods = () => {
           <h1 className="font-bebas text-6xl mt-3">POPULAR FOOD ITEMS</h1>
         </div>
         <div className="flex gap-4  items-center">
-          <p className="p-2 bg-white shadow-2xl rounded-full text-4xl">
+          <button
+            onClick={() => swiperRef.current?.slidePrev()}
+            className="p-2 bg-white shadow-2xl rounded-full text-4xl"
+          >
             <MdKeyboardArrowLeft />
-          </p>
-          <p className="p-2 text-red-700 bg-white shadow-2xl rounded-full text-4xl">
-            {" "}
+          </button>
+          <button
+            onClick={() => swiperRef.current?.slideNext()}
+            className="p-2 text-red-700 bg-white shadow-2xl rounded-full text-4xl"
+          >
             <MdKeyboardArrowRight />
-          </p>
+          </button>
         </div>
       </div>
-      <img className="absolute w-40" src={tamatoSalad} alt="" />
+      <FoodSwiper swiperRef={swiperRef} />
+      <img className="absolute w-30 -left-11 top-28" src={tamatoSalad} alt="" />
     </div>
   );
 };
