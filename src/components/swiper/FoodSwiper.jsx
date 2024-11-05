@@ -48,10 +48,12 @@ const FoodSwiper = ({ swiperRef }) => {
       description: "Barbecue Italian cuisine",
     },
   ];
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <div>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={isMobile ? 1 : 4}
         spaceBetween={30}
         modules={[Pagination]}
         className="mySwiper"
@@ -61,10 +63,10 @@ const FoodSwiper = ({ swiperRef }) => {
       >
         {foodList.map((food) => (
           <SwiperSlide key={food.id}>
-            <div className="text-center w-52 mt-9 bg-white p-3">
+            <div className="text-center mx-auto relative lg:w-52 mt-4 lg:mt-9 bg-white p-3">
               <div className="">
                 <img
-                  className="max-w-[80px] max-h-[60px] mx-auto"
+                  className=" lg:max-w-[80px] lg:max-h-[60px] mx-auto"
                   src={food.img}
                   alt={food.name}
                 />
