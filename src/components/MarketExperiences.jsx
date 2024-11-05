@@ -1,15 +1,18 @@
 import { useState } from "react";
 import marketImg from "../assets/svg/marketexp.svg";
 import marketExp from "../assets/svg/MarketPlace.svg";
-import { LuPhoneCall } from "react-icons/lu";
+import { LuPackage, LuPhoneCall } from "react-icons/lu";
 import "./Tabs.css";
+import { FiShoppingBag } from "react-icons/fi";
+import { SlBadge } from "react-icons/sl";
+import tamatoImg from "../assets/svg/tamatoImg.svg";
 const MarketExperiences = () => {
   const [activeTab, setActiveTab] = useState(0);
   const handleTabClick = (index) => {
     setActiveTab(index);
   };
   return (
-    <div className=" mt-20 mb-40   lg:px-40">
+    <div className=" relative mt-20 mb-40   lg:px-40">
       <div className="flex flex-col gap-12 lg:flex-row">
         <div className="relative w-[500px]">
           <img src={marketImg} alt="" />
@@ -36,7 +39,7 @@ const MarketExperiences = () => {
               <div className="tab-content">
                 {activeTab === 0 && (
                   <div className="tab-panel">
-                    <h2 className="font-bebas text-4xl mr-16">
+                    <h2 className="font-bebas text-4xl mt-3 mr-16">
                       Exceptional culinary experience and delicious food
                     </h2>
                     <p className="mt-4">
@@ -53,8 +56,8 @@ const MarketExperiences = () => {
                           about more
                         </button>
                       </div>
-                      <div className="flex items-center text-3xl">
-                        <LuPhoneCall className="text-red-600" />{" "}
+                      <div className="flex items-center">
+                        <LuPhoneCall className="text-red-600  text-3xl" />{" "}
                         <p className="font-roboto font-semibold ml-2">
                           01629563621
                         </p>
@@ -91,6 +94,37 @@ const MarketExperiences = () => {
           </div>
         </div>
       </div>
+      <div className="flex items-start mt-20  justify-evenly">
+        <div className="flex gap-4 items-center ">
+          <p className="p-4 rounded-full bg-[FFFFFF] shadow-2xl">
+            <LuPackage className="text-4xl text-red-600" />
+          </p>
+          <div>
+            <h1 className="uppercase font-bebas text-3xl">fast delivery</h1>
+            <p>Within 30 minutes</p>
+          </div>
+        </div>
+        <div className="flex gap-4 items-center ">
+          <p className="p-4 rounded-full bg-[FFFFFF] shadow-2xl">
+            <SlBadge className="text-4xl text-red-600" />
+          </p>
+          <div>
+            <h1 className="uppercase font-bebas text-3xl">absolute dining</h1>
+            <p>Best buffet restaurant</p>
+          </div>
+        </div>
+        <div className="flex gap-4 items-center ">
+          <p className="p-4 rounded-full bg-[FFFFFF] shadow-2xl">
+            <FiShoppingBag className="text-4xl text-red-600" />
+          </p>
+          <div>
+            <h1 className="uppercase font-bebas text-3xl">pickup delivery</h1>
+            <p>Grab your food order</p>
+          </div>
+        </div>
+      </div>
+
+      <img className="absolute top-1/3 right-0 w-40" src={tamatoImg} alt="" />
     </div>
   );
 };
