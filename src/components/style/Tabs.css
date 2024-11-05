@@ -17,7 +17,7 @@
 }
 
 .tab-content {
-  /* border-top: 1px solid #ddd; */
+  width: min-content;
   border-top: 2px solid #b52b1d;
 }
 

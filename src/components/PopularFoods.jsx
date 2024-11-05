@@ -32,7 +32,11 @@ const PopularFoods = () => {
         </div>
       </div>
       <FoodSwiper swiperRef={swiperRef} />
-      <img className="absolute w-30 -left-11 top-28" src={tamatoSalad} alt="" />
+      <img
+        className="hidden lg:block absolute w-30 -left-11 top-28"
+        src={tamatoSalad}
+        alt=""
+      />
     </div>
   );
 };
