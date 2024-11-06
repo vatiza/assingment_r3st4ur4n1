@@ -13,7 +13,7 @@ const MarketExperiences = () => {
     setActiveTab(index);
   };
   return (
-    <div className=" relative mt-7 mb-10   lg:px-40">
+    <div className=" relative mt-7 lg:mt-10 mb-10   lg:px-40">
       <div className="flex flex-col px-7  gap-12 lg:flex-row">
         <div className="relative lg:w-[500px]">
           <img src={marketImg} alt="" />
@@ -24,7 +24,7 @@ const MarketExperiences = () => {
           />
         </div>
         <div>
-          <div className="w-[450px]">
+          <div className="w-[350px] lg:w-96">
             <div className="tabs">
               <div className="tab-list">
                 {["About", "Experience", "Contact"].map((tab, index) => (
@@ -39,11 +39,11 @@ const MarketExperiences = () => {
               </div>
               <div className="tab-content">
                 {activeTab === 0 && (
-                  <div className="tab-panel">
+                  <div className="tab-panel ">
                     <h2 className="font-bebas w-64 lg:w-fit text-4xl mt-3 lg:mr-16">
                       Exceptional culinary experience and delicious food
                     </h2>
-                    <p className="mt-4 w-80 lg:w-fit">
+                    <p className="mt-4 w-full">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Pariatur similique harum fuga quas voluptate illo
                       excepturi laudantium esse velit magnam! Vero earum eum
@@ -95,31 +95,31 @@ const MarketExperiences = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center items-start mt-10  lg:justify-evenly px-9 lg:px-0">
+      <div className="flex flex-col lg:flex-row gap-6 items-start mt-10   lg:justify-evenly px-9 lg:px-0">
         <div className="flex gap-4 items-center ">
           <p className="p-4 rounded-full bg-[FFFFFF] shadow-2xl">
-            <LuPackage className="text-4xl text-red-600" />
+            <LuPackage className="text-2xl text-red-600" />
           </p>
           <div>
-            <h1 className="uppercase font-bebas text-3xl">fast delivery</h1>
+            <h1 className="uppercase font-bebas text-2xl">fast delivery</h1>
             <p>Within 30 minutes</p>
           </div>
         </div>
         <div className="flex gap-4 items-center ">
           <p className="p-4 rounded-full bg-[FFFFFF] shadow-2xl">
-            <SlBadge className="text-4xl text-red-600" />
+            <SlBadge className="text-2xl text-red-600" />
           </p>
           <div>
-            <h1 className="uppercase font-bebas text-3xl">absolute dining</h1>
+            <h1 className="uppercase font-bebas text-2xl">absolute dining</h1>
             <p>Best buffet restaurant</p>
           </div>
         </div>
         <div className="flex gap-4 items-center ">
           <p className="p-4 rounded-full bg-[FFFFFF] shadow-2xl">
-            <FiShoppingBag className="text-4xl text-red-600" />
+            <FiShoppingBag className="text-2xl text-red-600" />
           </p>
           <div>
-            <h1 className="uppercase font-bebas text-3xl">pickup delivery</h1>
+            <h1 className="uppercase font-bebas text-2xl">pickup delivery</h1>
             <p>Grab your food order</p>
           </div>
         </div>
