@@ -18,7 +18,7 @@ const TestimonialsSwiper = ({ swiperRef, data }) => {
       <Swiper
         spaceBetween={10}
         autoplay={{
-          delay: 150000,
+          delay: 2000,
         }}
         modules={[Autoplay]}
         className="mySwiper"
