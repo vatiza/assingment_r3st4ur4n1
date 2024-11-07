@@ -107,7 +107,7 @@ const Testimonials = () => {
   );
 
   return (
-    <div className="bg-[#faf5f0] px-7 mb-96 relative pb-10   pt-10 lg:px-40">
+    <div className="bg-[#faf5f0] px-7  relative pb-20   pt-10 lg:px-40">
       <img
         className=" hidden lg:block absolute left-0 w-32"
         src={tamoto}
