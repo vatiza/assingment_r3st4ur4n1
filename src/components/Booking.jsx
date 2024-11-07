@@ -4,7 +4,7 @@ import arrowIcon from "../assets/svg/arrow.svg";
 const BookingSection = () => {
   return (
     <div
-      className="relative bg-cover bg-center h-screen"
+      className="relative bg-cover  bg-center h-screen "
       style={{ backgroundImage: `url(${bgImg})` }}
     >
       <div className="px-7 lg:px-40 ">
@@ -43,9 +43,9 @@ const BookingSection = () => {
                     <input
                       type=""
                       placeholder="Reservation Date"
-                      className="w-full mt-5 lg:mt-0 p-3 bg-transparent border border-white text-white placeholder-white "
+                      className="w-full mt-1 lg:mt-0 p-3 bg-transparent border border-white text-white placeholder-white "
                     />
-                    <span className="absolute top-9 right-4 lg:right-3 lg:top-4  text-white">
+                    <span className="absolute top-5 right-4 lg:right-3 lg:top-4  text-white">
                       <SlCalender />
                     </span>
                   </div>

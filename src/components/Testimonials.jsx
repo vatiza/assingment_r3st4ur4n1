@@ -115,7 +115,7 @@ const Testimonials = () => {
               Crispy, Every Bite Taste
             </p>
           </div>
-          <h1 className="font-bebas text-4xl lg:text-5xl mt-3">
+          <h1 className="font-bebas text-5xl mt-3">
             What Some of my Customers Say
           </h1>
         </div>

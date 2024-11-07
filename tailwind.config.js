@@ -9,6 +9,12 @@ export default {
       roboto: ["Roboto", "sans-serif"],
       bebas: ["Bebas Neue", "sans-serif"],
     },
+
+    backgroundImage: {
+      'hero-pattern': "url('/img/hero-pattern.svg')",
+      'footer-texture': "url('/img/footer-texture.png')",
+    }
+
   },
   plugins: [],
 };
