@@ -39,7 +39,7 @@ const Navbar = () => {
       </li>
       <li>
         <a href="https://rakibs.live/" className="">
-          Check out my Portfolio!
+          Portfolio
         </a>
       </li>
     </>
@@ -62,8 +62,8 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="hidden lg:flex items-center ml-[250px]">
-            <button className="uppercase px-6 py-2 bg-yellow-400 font-roboto text-black text-sm font-semibold">
+          <div className="hidden lg:flex items-center ml-[220px]">
+            <button className="uppercase px-3 py-2 bg-yellow-400 font-roboto text-black text-sm font-semibold">
               book a table{" "}
             </button>
           </div>
