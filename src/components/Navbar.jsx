@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/svg/logo.svg";
 import { Bars3Icon } from "@heroicons/react/24/outline";
-
+import blendImg from "../assets/svg/blendImg.svg";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const navLink = (
@@ -26,21 +26,31 @@ const Navbar = () => {
           Client
         </a>
       </li>
-      <li>
-        <a href="#" className="">
-          Blog
-        </a>
-      </li>
+
       <li>
         <a href="#" className="">
           Contact
         </a>
       </li>
+      <li>
+        <a href="https://rakibs.live/blogs" className="">
+          Blog
+        </a>
+      </li>
+      <li>
+        <a href="https://rakibs.live/" className="">
+          Check out my Portfolio!
+        </a>
+      </li>
     </>
   );
+
   return (
     <div className="sticky bg-[#BD1F17] text-white top-0 z-20 ">
-      <div className="px-2 py-3  lg:px-40">
+      <div
+        className="px-7 py-3  lg:px-40"
+        style={{ backgroundImage: `url(${blendImg})` }}
+      >
         <div className="flex justify-between">
           <div className="flex items-center gap-3 ">
             <img src={logo} alt="Logo" className="h-8 w-auto " />
@@ -68,12 +78,15 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`fixed z-40 top-0 left-0 h-full w-3/4 bg-gray-100 overflow-hidden flex flex-col gap-12 origin-left duration-700 transform ${
+        className={`fixed z-40 top-0 left-0 h-full w-3/4 bg-[#BD1F17] overflow-hidden flex flex-col gap-12 origin-left duration-700 transform ${
           toggleMenu ? "translate-x-0" : "-translate-x-full"
         }`}
+        style={{ backgroundImage: `url(${blendImg})` }}
       >
         <div className="px-8">
           <div className="flex flex-col list-none mt-10  font-bold tracking-wider">
+            <h1 className="text-4xl">Restaurant</h1>
+            <hr className="mb-3" />
             {navLink}
           </div>
         </div>
