@@ -10,7 +10,7 @@ const Header = () => {
         style={{ backgroundImage: `url(${bgblendImg})` }}
       >
         <div className="flex flex-col px-7 lg:flex-row lg:gap-24  ">
-          <h1 className="lg:absolute text-5xl lg:top-1/3 uppercase lg:text-8xl font-bebas lg:w-[720px] lg:bg-gradient-to-r z-0 lg:z-10 lg:from-[#BD1F17] lg:from-30%  lg:bg-[#BD1F17] lg:bg-opacity-25">
+          <h1 className="lg:absolute text-5xl lg:top-1/4 uppercase lg:text-8xl font-bebas lg:w-[710px]  z-0 lg:z-10 bg-gradient-to-r from-[#bd1f1700] from-0% to-[#BD1F17B2] to-90%">
             Taste the authentic Saudi cuisine
           </h1>
           <div className="lg:mt-[340px]">
