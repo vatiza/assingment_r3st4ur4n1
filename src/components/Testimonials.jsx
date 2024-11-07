@@ -1,7 +1,8 @@
 import { useRef } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import TestimonialsSwiper from "./swiper/TestimonialsSwiper";
-
+import tamoto from "../assets/img/221.png";
+import tree from "../assets/img/12.png";
 const Testimonials = () => {
   const swiperRef = useRef(null);
   const tesimonialsData = [
@@ -106,7 +107,17 @@ const Testimonials = () => {
   );
 
   return (
-    <div className="bg-[#faf5f0] px-7 mb-96  relative pb-10   pt-10     lg:px-40">
+    <div className="bg-[#faf5f0] px-7 mb-96 relative pb-10   pt-10 lg:px-40">
+      <img
+        className=" hidden lg:block absolute left-0 w-32"
+        src={tamoto}
+        alt=""
+      />
+      <img
+        className="hidden lg:block absolute right-0 w-72 bottom-0 "
+        src={tree}
+        alt=""
+      />
       <div className="flex flex-row items-center justify-between">
         <div>
           <div className="flex items-center gap-2 ">
@@ -122,7 +133,7 @@ const Testimonials = () => {
         <div className="hidden lg:block">{swiperBtn}</div>
       </div>
       <TestimonialsSwiper swiperRef={swiperRef} data={tesimonialsData} />
-      <div className="flex justify-center mt-3 lg:hidden">{swiperBtn}</div>
+      <div className="flex justify-center mt-7 lg:hidden">{swiperBtn}</div>
     </div>
   );
 };

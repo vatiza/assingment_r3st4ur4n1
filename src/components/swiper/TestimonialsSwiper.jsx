@@ -2,6 +2,7 @@ import { useState } from "react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import group from "../../assets/img/Group.png";
 import comma from "../../assets/img/comma.png";
 import videoBtn from "../../assets/img/Play.png";
 import "../style/VideoPlayBtn.css";
@@ -28,28 +29,38 @@ const TestimonialsSwiper = ({ swiperRef, data }) => {
         {data.map((item, index) => (
           <SwiperSlide key={index}>
             <div className=" flex flex-col-reverse lg:flex-row  lg:h-[355px] mt-9 relative  w-full">
-              <div className="flex flex-col   items-start bg-[#FEBF00] p-9 lg:w-2/5  ">
+              <div className="flex flex-col relative   items-start bg-[#FEBF00]  p-7 lg:w-2/5  ">
                 <img src={comma} alt="" />
                 <div className="ml-4">
                   <p className="font-roboto text-xl h-28 ">
                     {item.description}
                   </p>
 
-                  <div className="flex  flex-col mt-28   justify-end">
+                  <div className="flex -ml-4 lg:ml-0 flex-col mt-20   justify-end">
                     <div className="flex justify-between">
                       <div>
                         <p className="font-bold">{item.customer_name}</p>
                         <p className="text-sm">{item.country_name}</p>
                       </div>
+
                       <img className="" src={item.profile_pic} alt="" />
                     </div>
-                    <hr className="my-3 border-1 border-black" />
+                    <div className="relative">
+                      {" "}
+                      <hr className="my-3 border-1 border-black" />
+                      <hr className="border-2 border-[#BD1F17] absolute top-2 right-0 w-1/6" />
+                    </div>
+                    <img
+                      className="w-7 absolute  left-0 lg:left-0  lg:bottom-10 bottom-1 "
+                      src={group}
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
 
               <div
-                className="relative h-52 lg:h-auto  lg:w-3/4 "
+                className="relative h-[200px] lg:h-auto  lg:w-3/4 "
                 style={{
                   backgroundImage: `url('https://i.ytimg.com/vi/2g3iLOmS1Zg/hqdefault.jpg')`,
                   backgroundSize: "cover",
