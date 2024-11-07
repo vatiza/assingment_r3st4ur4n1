@@ -106,7 +106,7 @@ const Testimonials = () => {
   );
 
   return (
-    <div className="bg-[#faf5f0] px-7  relative pb-10   pt-10     lg:px-40">
+    <div className="bg-[#faf5f0] px-7 mb-96  relative pb-10   pt-10     lg:px-40">
       <div className="flex flex-row items-center justify-between">
         <div>
           <div className="flex items-center gap-2 ">

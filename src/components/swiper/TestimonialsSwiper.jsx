@@ -16,9 +16,8 @@ const TestimonialsSwiper = ({ swiperRef, data }) => {
     <div>
       <Swiper
         spaceBetween={10}
-        loop={true}
         autoplay={{
-          delay: 15000,
+          delay: 150000,
         }}
         modules={[Autoplay]}
         className="mySwiper"
@@ -28,7 +27,7 @@ const TestimonialsSwiper = ({ swiperRef, data }) => {
       >
         {data.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className=" flex flex-col-reverse lg:flex-row h-[355px] mt-9 relative  w-full">
+            <div className=" flex flex-col-reverse lg:flex-row  lg:h-[355px] mt-9 relative  w-full">
               <div className="flex flex-col   items-start bg-[#FEBF00] p-9 lg:w-2/5  ">
                 <img src={comma} alt="" />
                 <div className="ml-4">
@@ -50,9 +49,9 @@ const TestimonialsSwiper = ({ swiperRef, data }) => {
               </div>
 
               <div
-                className="relative  lg:w-1/2 "
+                className="relative h-52 lg:h-auto  lg:w-3/4 "
                 style={{
-                  backgroundImage: `url('https://i.ytimg.com/vi/sdTv67KIS54/hqdefault.jpg')`,
+                  backgroundImage: `url('https://i.ytimg.com/vi/2g3iLOmS1Zg/hqdefault.jpg')`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
@@ -60,7 +59,7 @@ const TestimonialsSwiper = ({ swiperRef, data }) => {
               >
                 {!isPlaying && (
                   <img
-                    className="lg:absolute top-1/2 right-1/2 -translate-y-1/2 cursor-pointer"
+                    className="absolute top-1/2 right-1/2 translate-x-1/2 lg:translate-x-0 -translate-y-1/2 cursor-pointer"
                     src={videoBtn}
                     alt="Play button"
                     onClick={() => handlePlay()}
@@ -71,7 +70,7 @@ const TestimonialsSwiper = ({ swiperRef, data }) => {
                 {isPlaying && (
                   <iframe
                     className="w-full h-full"
-                    src="https://www.youtube.com/embed/YQffMJb1or0?si=9AV1-6AaXySj6jtY"
+                    src="https://www.youtube.com/embed/2g3iLOmS1Zg?si=kdXDqr02yU72JUF4"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
