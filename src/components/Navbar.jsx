@@ -17,7 +17,7 @@ const Navbar = () => {
         </a>
       </li>
       <li>
-        <a href="#" className="">
+        <a href="https://rakibs.live/" className="">
           Portfolio
         </a>
       </li>
@@ -28,18 +28,13 @@ const Navbar = () => {
       </li>
 
       <li>
-        <a href="#" className="">
-          Contact
-        </a>
-      </li>
-      <li>
         <a href="https://rakibs.live/blogs" className="">
           Blog
         </a>
       </li>
       <li>
-        <a href="https://rakibs.live/" className="">
-          Portfolio
+        <a href="https://rakibs.live/blogs" className="">
+          Contact
         </a>
       </li>
     </>
@@ -57,7 +52,7 @@ const Navbar = () => {
             <h1 className="font-poppins text-2xl font-semibold">
               Restau<span className="font-normal">rant</span>
             </h1>
-            <div className="hidden lg:flex items-center list-none gap-5 ml-9">
+            <div className="hidden lg:flex items-center font-raleway list-none gap-5 ml-9">
               {navLink}
             </div>
           </div>
@@ -84,7 +79,7 @@ const Navbar = () => {
         style={{ backgroundImage: `url(${blendImg})` }}
       >
         <div className="px-8">
-          <div className="flex flex-col list-none mt-10  font-bold tracking-wider">
+          <div className="flex flex-col list-none mt-10 gap-1 font-raleway   tracking-wider">
             <h1 className="text-4xl">Restaurant</h1>
             <hr className="mb-3" />
             {navLink}

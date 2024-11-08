@@ -4,10 +4,10 @@ import arrowIcon from "../assets/svg/arrow.svg";
 const BookingSection = () => {
   return (
     <div
-      className="relative bg-cover  bg-center h-screen "
+      className="relative  bg-center pb-10   "
       style={{ backgroundImage: `url(${bgImg})` }}
     >
-      <div className="px-7 lg:px-40 ">
+      <div className="px-7  lg:px-40">
         <div className="flex items-center gap-2 pt-10 lg:pt-20 ">
           <input type="checkbox" />
           <p className="font-roboto text-red-600 text-sm font-semibold">

@@ -6,11 +6,11 @@ const Header = () => {
   return (
     <div className="relative bg-cover bg-center bg-[#BD1F17]  ">
       <div
-        className="lg:h-screen    text-white  py-3   lg:px-40"
+        className="lg:h-screen    text-white pb-10   lg:px-40"
         style={{ backgroundImage: `url(${bgblendImg})` }}
       >
         <div className="flex flex-col px-7 lg:flex-row lg:gap-24  ">
-          <h1 className="lg:absolute text-5xl lg:top-1/4 uppercase lg:text-8xl font-bebas lg:w-[710px]  z-0 lg:z-10 bg-gradient-to-r from-[#bd1f1700] from-0% to-[#BD1F17B2] to-90%">
+          <h1 className="lg:absolute text-5xl lg:top-1/4 uppercase lg:text-8xl font-bebas lg:w-[710px]  z-0 lg:z-10 lg:bg-gradient-to-r from-[#bd1f1700] from-0% to-[#BD1F17B2] to-90%">
             Taste the authentic Saudi cuisine
           </h1>
           <div className="lg:mt-[340px]">

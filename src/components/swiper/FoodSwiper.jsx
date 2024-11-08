@@ -23,7 +23,7 @@ const FoodSwiper = ({ swiperRef, foodList }) => {
       >
         {foodList?.map((food) => (
           <SwiperSlide key={food.id}>
-            <div className="text-center mx-auto relative lg:w-56  mt-4 lg:mt-9 bg-white p-3">
+            <div className="text-center mx-auto relative lg:w-56 pb-10  mt-4 lg:mt-9 bg-white p-3">
               <div className="">
                 <img
                   className=" lg:max-w-[90px] lg:max-h-[60px]  mx-auto"

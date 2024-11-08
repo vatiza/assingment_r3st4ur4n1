@@ -11,7 +11,7 @@ const Footer = () => {
       className="relative bg-cover bg-center  "
       style={{ backgroundImage: `url(${footerImg})` }}
     >
-      <div className="px-7 lg:px-40    bg-black bg-opacity-75 mb-10  h-screen">
+      <div className="px-7 lg:px-40 pb-16   bg-black bg-opacity-75   ">
         <h1 className="uppercase text-center pt-12 lg:pt-32 text-white  font-bebas text-5xl">
           We ready to have you the best dining experiences
         </h1>
@@ -49,17 +49,17 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex  justify-center lg:mt-40  ">
+        <div className="flex  justify-center mt-20 lg:mt-40  ">
           <div className="text-center">
             <div className="flex gap-4 text-white justify-center mb-4">
-              <IoLogoFacebook className="border rounded-full text-5xl p-3" />
-              <RiTwitterXFill className="border rounded-full text-5xl p-3" />
-              <FaSquareInstagram className="border rounded-full text-5xl p-3" />
-              <FaLinkedin className="border rounded-full text-5xl p-3" />
+              <IoLogoFacebook className="border rounded-full text-4xl p-2 lg:text-5xl lg:p-3" />
+              <RiTwitterXFill className="border rounded-full text-4xl p-2 lg:text-5xl lg:p-3" />
+              <FaSquareInstagram className="border rounded-full text-4xl p-2 lg:text-5xl lg:p-3" />
+              <FaLinkedin className="border rounded-full text-4xl p-2 lg:text-5xl lg:p-3" />
             </div>
-            <p className="text-white text-xl my-2">
+            <p className="text-white font-roboto text-sm flex lg:flex-none gap-2 lg:text-xl ">
               © 2023{" "}
-              <span className="text-[#FEBF00] block lg:hidden">Niomax</span> All
+              <span className="text-[#FEBF00] hidden lg:block">Niomax</span> All
               Rights Reserved
             </p>
           </div>

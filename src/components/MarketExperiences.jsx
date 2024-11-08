@@ -53,7 +53,8 @@ const MarketExperiences = () => {
                     </p>
                     <div className="flex  items-center mt-6 gap-6">
                       <div>
-                        <button className="bg-yellow-500  text-black font-semibold py-2 px-4 uppercase font-roboto  hover:bg-yellow-600">
+                      
+                        <button className="bg-yellow-500 text-black   font-semibold py-2 px-4 uppercase font-roboto  hover:bg-yellow-600">
                           about more
                         </button>
                       </div>
